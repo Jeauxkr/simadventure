@@ -1,3 +1,20 @@
-# Godot 4+ specific ignores
+# Godot 4
 .godot/
-/android/
+
+# Builds / exports
+export/
+export_presets.cfg~
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Mono (if using C#)
+.mono/
+*.mono
+
+# Backups / temp
+*.tmp
+*.bak
