@@ -1,0 +1,681 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxf6vmfxnin77"]
+
+[ext_resource type="Script" uid="uid://cef02oise0qv8" path="res://scripts/MainUI.gd" id="1_74o4q"]
+
+[node name="MainUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_74o4q")
+
+[node name="CharacterPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 384.0
+offset_bottom = 392.0
+
+[node name="CharacterSubPanel" type="Panel" parent="CharacterPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 40.0
+offset_right = 344.0
+offset_bottom = 352.0
+
+[node name="CharacterTitleLabel" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel"]
+layout_mode = 2
+offset_left = -16.0
+offset_top = -40.0
+offset_right = 344.0
+offset_bottom = 6.0
+focus_mode = 2
+bbcode_enabled = true
+text = "[ Character Stats ]"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+horizontal_alignment = 1
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CharacterPanel/CharacterSubPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 320.0
+offset_bottom = 304.0
+
+[node name="CharacterVBox" type="VBoxContainer" parent="CharacterPanel/CharacterSubPanel/ScrollContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CharacterLevel" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Character Level: "
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Experience" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Experience: "
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Health" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "
+Health:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Stamina" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Stamina: "
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Mana" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Mana:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Endurance" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Endurance:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Agility" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Agility:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Focus" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Focus:
+
+"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Strength" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Strength:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Vitality" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Vitality:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Intelligence" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Intelligence:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Dexterity" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Dexterity:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Crafting" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Crafting:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Luck" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Luck:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Fishing" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Fishing:
+
+"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Hunting" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Hunting:
+"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Woodcutting" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Woodcutting:
+"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="FieldDressing" type="RichTextLabel" parent="CharacterPanel/CharacterSubPanel/ScrollContainer/CharacterVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Field Dressing:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="FeedPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 432.0
+offset_right = 384.0
+offset_bottom = 624.0
+
+[node name="FeedSubPanel" type="Panel" parent="FeedPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 344.0
+offset_bottom = 176.0
+
+[node name="FeedScrollContainer" type="ScrollContainer" parent="FeedPanel/FeedSubPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 320.0
+offset_bottom = 152.0
+
+[node name="FeedText" type="RichTextLabel" parent="FeedPanel/FeedSubPanel/FeedScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 2
+bbcode_enabled = true
+text = "[Adventure Begins]"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 2
+selection_enabled = true
+
+[node name="TimerPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 560.0
+offset_right = 744.0
+offset_bottom = 616.0
+
+[node name="TimerBar" type="ProgressBar" parent="TimerPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 328.0
+offset_bottom = 48.0
+
+[node name="ActionDisplay" type="RichTextLabel" parent="TimerPanel"]
+layout_mode = 0
+offset_left = -24.0
+offset_top = 56.0
+offset_right = 360.0
+offset_bottom = 80.0
+bbcode_enabled = true
+text = "Player's Current Action Display"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionTimer" type="Timer" parent="TimerPanel"]
+one_shot = true
+
+[node name="InventoryPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 360.0
+offset_right = 1128.0
+offset_bottom = 624.0
+
+[node name="Gold" type="RichTextLabel" parent="InventoryPanel"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = -32.0
+offset_right = 200.0
+offset_bottom = -8.0
+text = "Gold: "
+
+[node name="InventorySubPanel" type="Panel" parent="InventoryPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 344.0
+offset_bottom = 224.0
+
+[node name="InventoryScrollContainer" type="ScrollContainer" parent="InventoryPanel/InventorySubPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 320.0
+offset_bottom = 152.0
+follow_focus = true
+draw_focus_border = true
+
+[node name="InventoryVBox" type="VBoxContainer" parent="InventoryPanel/InventorySubPanel/InventoryScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BackpackButton" type="RichTextLabel" parent="InventoryPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 232.0
+offset_right = 192.0
+offset_bottom = 256.0
+focus_mode = 2
+bbcode_enabled = true
+text = "No Bag Equipped"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="BackpackSlots" type="RichTextLabel" parent="InventoryPanel"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 232.0
+offset_right = 360.0
+offset_bottom = 256.0
+focus_mode = 2
+bbcode_enabled = true
+text = "10 / 10"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="BuyButton" type="Button" parent="InventoryPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 176.0
+offset_bottom = 47.0
+text = "[Shop]"
+
+[node name="SellButton" type="Button" parent="InventoryPanel"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 16.0
+offset_right = 346.0
+offset_bottom = 47.0
+text = "[ Options ]"
+
+[node name="Equipment" type="TabContainer" parent="."]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 24.0
+offset_right = 1128.0
+offset_bottom = 320.0
+current_tab = 0
+
+[node name="Equipment" type="Panel" parent="Equipment"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="EquipmentScrollContainer" type="ScrollContainer" parent="Equipment/Equipment"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+follow_focus = true
+draw_focus_border = true
+
+[node name="EquipmentVBox" type="VBoxContainer" parent="Equipment/Equipment/EquipmentScrollContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MainHand" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Main Hand:
+"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="OffHand" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Off Hand:
+
+"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Head" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Head:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Chest" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Chest:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Shoulders" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Shoulders:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Hands" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Hands:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Waist" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Waist:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Legs" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Legs:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Feet" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Feet:
+
+"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Ring" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Ring:"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Amulet" type="RichTextLabel" parent="Equipment/Equipment/EquipmentScrollContainer/EquipmentVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "Amulet:
+
+"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="QuestPanel" type="Panel" parent="Equipment"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="QuestScroll" type="ScrollContainer" parent="Equipment/QuestPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+follow_focus = true
+draw_focus_border = true
+
+[node name="quest_vbox" type="VBoxContainer" parent="Equipment/QuestPanel/QuestScroll"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LocationPanel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 24.0
+offset_right = 728.0
+offset_bottom = 536.0
+
+[node name="LocationSubPanel" type="Panel" parent="LocationPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 40.0
+offset_right = 288.0
+offset_bottom = 232.0
+
+[node name="LocationTitleLabel" type="RichTextLabel" parent="LocationPanel/LocationSubPanel"]
+layout_mode = 2
+offset_left = -16.0
+offset_top = -40.0
+offset_right = 288.0
+offset_bottom = 6.0
+focus_mode = 2
+bbcode_enabled = true
+text = "[ Discovered Locations ]"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+horizontal_alignment = 1
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="LocationScrollContainer" type="ScrollContainer" parent="LocationPanel/LocationSubPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 264.0
+offset_bottom = 184.0
+
+[node name="LocationVBox" type="VBoxContainer" parent="LocationPanel/LocationSubPanel/LocationScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DescriptionSubPanel" type="Panel" parent="LocationPanel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 272.0
+offset_right = 288.0
+offset_bottom = 496.0
+
+[node name="LocationDescription" type="RichTextLabel" parent="LocationPanel/DescriptionSubPanel"]
+layout_mode = 2
+offset_left = -16.0
+offset_top = -40.0
+offset_right = 288.0
+offset_bottom = 6.0
+focus_mode = 2
+bbcode_enabled = true
+text = "[ Description ]"
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+horizontal_alignment = 1
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="DescriptionScrollContainer" type="ScrollContainer" parent="LocationPanel/DescriptionSubPanel"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 264.0
+offset_bottom = 216.0
+
+[node name="DescriptionVBox" type="VBoxContainer" parent="LocationPanel/DescriptionSubPanel/DescriptionScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="DescriptionInput" type="RichTextLabel" parent="LocationPanel/DescriptionSubPanel/DescriptionScrollContainer/DescriptionVBox"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+fit_content = true
+scroll_following = true
+context_menu_enabled = true
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="ContextMenu" type="PopupMenu" parent="."]
+always_on_top = true
+keep_title_visible = true
+
+[connection signal="timeout" from="TimerPanel/ActionTimer" to="." method="_on_action_timer_timeout"]
+[connection signal="id_pressed" from="ContextMenu" to="." method="_on_ContextMenu_id_pressed"]
